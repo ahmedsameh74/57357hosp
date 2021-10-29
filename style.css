@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background-color: hsl(0deg 0% 13%);
+    color: white;
+    font-size: 25px;
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+}
+nav span{
+    display: inline-block;
+    margin: 25px;
+    font-weight: 600;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 25px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    /* float: right; */
+}
+nav a:hover{
+    background-color: hsl(0deg 3% 28%);
+}
+
+/*Home*/
+#Home{
+    background-image: url(images/large_thumbnail.jpg);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+#Home h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+#Home p{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#Home button{
+    border-radius: 3px;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#Home .det{
+    background-color: hsla(329, 76%, 25%, 1);
+    color: white;
+
+}
+#Home .abo{
+    background-color: hsl(165deg 54% 37%);
+    color: white;
+}
+#About{
+    margin-top: 30px;
+}
+#About h2{
+    /* position: absolute;
+    left: 43%; */
+    /* border-bottom: 2px solid hsl(0deg 81% 51%); */
+    color: hsl(265deg 72% 39%);
+    top: 800px;
+    text-align: center;
+}
+#About .line{
+    width: 150px;
+    height: 4px;
+    background-color: hsl(0deg 81% 51%);
+    margin: 7px auto;
+    border-radius: 40px;
+}
+#About .content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    width: 960px;
+    /* border: 1px solid black; */
+    
+}
+.content1 img{
+    width: 450px;
+}
+ .content1 .text{
+    width: 380px;
+    /* margin: 0 auto; */
+} 
+ .content1 .text p{
+    /* text-align: justify; */
+    /* margin-right: -200px; */
+    /* text-indent: 148px; */
+    line-height: 30px;
+    /* text-align: start; */
+} 
+.content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+}
+.content2 img{
+    width: 450px;
+    /* margin-right: -55px; */
+}
+.content2 text{
+    width: 380px;
+    /* margin-left: -43px; */
+}
+.content2 .text p{
+    line-height: 30px;
+}
+.Ablas{
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 970px;
+}
+.cont{
+    width: 459px;
+    height: 420px;
+    padding: 10px;
+    margin: 15px 10px;
+    box-shadow: 1px 1px 3px #c0b3b3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 3px;
+    
+}
+.cont img{
+    width: 400px;
+}
+.cont p{
+    width: 400px;
+    margin-top: 10px;
+}
+.cont button{
+    display: block;
+    margin: 0 350px;
+    background-color: hsl(217deg 89% 61%);
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: -2px;
+    top: 365px;
+}
+.cont i{
+    display: block;
+    margin: 10px 30px;
+    /* background-color: hsl(217deg 89% 61%); */
+    /* color: white; */
+    border: none;
+    /* width: 100px; */
+    /* height: 40px; */
+    /* cursor: pointer; */
+    position: absolute;
+    left: -2px;
+    top: 365px;
+}
+.cont .eye{
+    display: block;
+    margin: 10px 50px;
+    /* background-color: hsl(217deg 89% 61%); */
+    /* color: white; */
+    border: none;
+    /* width: 100px; */
+    /* height: 40px; */
+    /* cursor: pointer; */
+    position: absolute;
+    left: -2px;
+    top: 365px;
+    font-weight: 600;
+}
+.btn{
+    display: block;
+    margin: 25px auto;
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#Contact-us {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/contact\ us.gif);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#Contact-us h2{
+    /* position: absolute;
+    top: 380%;
+    right: 45%; */
+    margin-bottom: 35px;
+}
+#Contact-us input{
+    padding: 7px;
+}
+#Contact-us #name{
+    /* position: absolute;
+    top: 395%;
+    right: 24%; */
+    width: 50%;
+    margin-bottom: 10px;
+}
+#Contact-us #email{
+    /* position: absolute;
+    top: 403%;
+    right: 24%; */
+    width: 50%;
+    margin-bottom: 10px;
+}
+#Contact-us textarea{
+    /* position: absolute;
+    top: 411%;
+    right: 24%; */
+    width: 50%;
+    padding: 7px;
+
+}
+#Contact-us button{
+    /* position: absolute;
+    top: 450%;
+    right: 44%; */
+    display: block;
+    margin: 50px auto;
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#LogIn{
+    width: 100%;
+    height: 70vh;
+    background-image: url(images/html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#LogIn h2{
+    /* position: absolute;
+    top: 500%;
+    right: 42%; */
+    margin-bottom: 10px;
+}
+#LogIn input{
+    /* position: absolute;
+    top: 510%;
+    right: 24%; */
+    width: 50%;
+    padding: 7px;
+    margin-top: 10px;
+}
+#LogIn button{
+    /* position: absolute;
+    top: 526%;
+    right: 45%; */
+    display: block;
+    margin: 35px auto;
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 60vh;
+    background-image: url(images/beautiful-color-ui-gradients-backgrounds-virgin-america.png);
+    color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer .icons{
+   font-size: 45px;
+}
+.list ul{
+    list-style: none;
+    /* margin: 5px; */
+}
+.list li{
+    margin: 20px 0;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+    /* line-height: 5px; */
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
